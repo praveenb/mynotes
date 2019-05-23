@@ -1,9 +1,13 @@
+//Initally Follow steps in https://github.com/flutter/flutter/wiki/Add-Flutter-to-existing-apps
+//If any issue, then this below steps may help to resolve it.
+
 Step 1: $ flutter create -t module my_flutter
 
 Step 2: Run /.android: gradlew assembleDebug 
 It will generate flutter-debug.aar
 
 Step 3: Check flutter-debug.aar in .android/Flutter/build/outputs/aar/ -> It must consist flutter_assets folder
+
 
 Step 4: if any issue,
 
