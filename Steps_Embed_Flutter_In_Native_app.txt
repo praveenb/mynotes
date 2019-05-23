@@ -1,0 +1,53 @@
+Step 1: $ flutter create -t module my_flutter
+
+Step 2: Run /.android: gradlew assembleDebug 
+It will generate flutter-debug.aar
+
+Step 3: Check flutter-debug.aar in .android/Flutter/build/outputs/aar/ -> It must consist flutter_assets folder
+
+Step 4: if any issue,
+
+Step 5: flutter clean
+Step 6:Flutter run
+
+Step 7:Run /.android: gradlew assembleDebug
+
+Step 8: In .android - > gradle.properties - add below lines
+org.gradle.java.home=C:/Program Files/Java/jdk1.8.0_181
+
+android.enableJetifier=true
+android.useAndroidX=true
+
+Step 9: in build.gradle -> Change classpath
+classpath 'com.android.tools.build:gradle:3.4.1' (latest)
+
+Step 10: Run /.android: gradlew assembleDebug
+
+Step 11: now open Flutter attached Module in native Android app
+and fix import issues.
+
+Step 12: Run /.android: gradlew assembleDebug
+
+You should see all issues resolved.
+
+Step 13: Now run Native Android app
+
+If you face VM issue
+Run /.android: gradlew assembleDebug
+
+If you still face issue 
+Start from Step 5 again
+
+
+Step 14: When release a new build
+Run /.android: gradlew assembleRelease
+It will generate flutter-release.aar
+
+Then only Flutter code build attached/Embeds in to Android build
+
+
+Step 15: You may also delete .android and .ios folder in Flutter project
+Step 16: And then open pubspec.yaml and click on Packages.get, it will create .android and .iOs folders again.
+
+Start from Step 7 again
+ 
