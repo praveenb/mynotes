@@ -30,7 +30,7 @@ Step 12: Run /.android: gradlew assembleDebug
 
 You should see all issues resolved.
 
-Step 13: Now run Native Android app
+Step 13: Now run Native Android app (Uninstall existing app and then run app)
 
 If you face VM issue
 Run /.android: gradlew assembleDebug
